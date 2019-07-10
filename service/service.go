@@ -1,6 +1,14 @@
 package service
 
-import "books_v2/domain"
+import (
+	"books_v2/domain"
+	"errors"
+)
+
+var (
+	ErrIsExist = errors.New("Контакт существует.")
+	ErrNoName  = errors.New("Контакт должен иметь имя.")
+)
 
 type booksService struct {
 	store domain.PhoneStore
