@@ -1,3 +1,4 @@
 # Editor-based HTTP Client requests
 /httpRequests/
 /vendor
+/.idea
